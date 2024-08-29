@@ -1719,6 +1719,16 @@ input, select, textarea {
 			letter-spacing: -0.025em;
 		}
 
+		input[type="button"].small,
+		input[type="submit"].small,
+		input[type="reset"].small,
+		button.small,
+		.button.small {
+			font-size: 0.8em;
+			padding: 0.5em 1.175em 0.5em 1.175em;
+			/* letter-spacing: -0.025em; */
+		}
+
 		input[type="button"].alt,
 		input[type="submit"].alt,
 		input[type="reset"].alt,
@@ -1890,6 +1900,35 @@ input, select, textarea {
 					ul.social li a:hover:before {
 						background-color: transparent;
 					}
+
+/* Tags */
+/* Container for tags */
+.tags {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Individual tag styling */
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333;               /* Dark text color */
+    border-radius: 15px;      /* Rounded corners */
+    font-size: 0.9em;          /* Slightly smaller text */
+    font-weight: bold;         /* Bold text */
+    border: 1px solid #ddd;   /* Light border */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for tags */
+.tag:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: #fff;               /* White text color on hover */
+    border-color: #007bff;     /* Blue border on hover */
+}
 
 /* Actions */
 
